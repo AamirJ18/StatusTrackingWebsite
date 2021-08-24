@@ -130,3 +130,43 @@ body {
   background-color: var(--mainWhite);
   transition: var(--animate);
 }
+.back {
+  margin-top: 100px;
+}
+
+/* ________TABLE_______ */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 0.9em;
+  font-family: "Open Sans", serif;
+  min-width: 100%;
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+}
+.styled-table thead tr {
+  background-color: var(--primaryCol);
+  color: var(--mainWhite);
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--grey);
+  border-right: 1px solid var(--grey);
+  border-left: 1px solid var(--grey);
+}
+
+.addButton {
+  display: flex;
+  justify-content: center;
+}
+.addRow {
+  width: fit-content;
+  color: var(--mainBlack);
+  background-color: var(--grey);
+  border: 1px solid var(--mainBlack);
+}
+.addRow:hover {
+  background-color: var(--mainWhite);
+  color: var(--mainBlack);
+}
