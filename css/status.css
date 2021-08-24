@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 /* css variables  */
 :root {
   --primaryCol: rgb(10, 104, 236);
-   --bg-color: #eeeeee;
+  --bg-color: #eeeeee;
   --mainWhite: #fff;
   --mainBlack: #000;
-  --grey:#ddd;
+  --grey: #ddd;
   --darkGrey: #d4c7c7;
   --animate: 0.2s linear;
 }
@@ -18,118 +18,115 @@ html {
   scroll-behavior: smooth;
 }
 
-
-
 body {
-    background-color:var(--bg-color);
-    font-family: 'Open Sans', serif;
+  background-color: var(--bg-color);
+  font-family: "Open Sans", serif;
 }
 
 .container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: var(--mainWhite);
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 0.10rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: var(--mainWhite);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.1rem;
 }
 
 .card-header:first-child {
-    border-radius: calc(0.37rem - 1px) calc(0.37rem - 1px) 0 0;
+  border-radius: calc(0.37rem - 1px) calc(0.37rem - 1px) 0 0;
 }
 #card-header {
-    letter-spacing:1px;
-    font-weight: bold;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 0;
-    background-color: var(--grey);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: var(--grey);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .track {
-    position: relative;
-    background-color: var(--grey);
-    height: 7px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 60px;
-    margin-top: 50px;
+  position: relative;
+  background-color: var(--grey);
+  height: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 50px;
 }
 
 .track .step {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    width: 25%;
-    margin-top: -18px;
-    text-align: center;
-    position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 25%;
+  margin-top: -18px;
+  text-align: center;
+  position: relative;
 }
 
 .track .step.active:before {
-    background: var(--primaryCol);
+  background: var(--primaryCol);
 }
 
 .track .step::before {
-    height: 6px;
-    position: absolute;
-    content: "";
-    width: 100%;
-    left: 0;
-    top: 18px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  left: 0;
+  top: 18px;
 }
 
 .track .step.active .icon {
-    background: var(--primaryCol);
-    color: var(--mainWhite);
+  background: var(--primaryCol);
+  color: var(--mainWhite);
 }
 
 .track .icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    position: relative;
-    border-radius: 100%;
-    background: #ddd
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  border-radius: 100%;
+  background: #ddd;
 }
 
 .track .step.active .text {
-    font-weight: 400;
-    color: var(--mainBlack);
+  font-weight: 400;
+  color: var(--mainBlack);
 }
 
 .track .text {
-    display: block;
-    margin-top: 7px;
+  display: block;
+  margin-top: 7px;
 }
 
 .button {
-    font-size: 16px; 
-    width:fit-content;
-    height: 40px;
-    padding: 0 25px;
-    background-color: var(--primaryCol);
-    color: var(--mainWhite);
-    border:1.2px solid var(--primaryCol);
+  font-size: 16px;
+  width: fit-content;
+  height: 40px;
+  padding: 0 25px;
+  background-color: var(--primaryCol);
+  color: var(--mainWhite);
+  border: 1.2px solid var(--primaryCol);
 }
 .button:hover {
-    color: var(--primaryCol);
-    background-color: var(--mainWhite);
-    transition: var(--animate);
+  color: var(--primaryCol);
+  background-color: var(--mainWhite);
+  transition: var(--animate);
 }
-
