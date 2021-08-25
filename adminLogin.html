@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="style.css">
     <title>Authentication</title>
 </head>
-
 <body>
     <div class="hero">
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn" onclick="productdetails()">Product</button>
-                <button type="button" class="toggle-btn" onclick="login()">Admin</button>
+                <button type="button" class="toggle-btn" id="toggle-btn-1" onclick="productdetails()">Track Status</button>
+                <button type="button" class="toggle-btn" id="toggle-btn-2" onclick="login()">Admin</button>
             </div>
             <div class="social-icons">
                 <a href="http://www.facebook.com">
-                    <img src="images/fb.png" onclick="www.facebook.com">
-                </a>
-                <a href="http://www.twitter.com">
-                    <img src="images/tw.png">
-                </a>
-                <a href="http://www.gmail.com">
-                    <img src="images/gp.png">
-                </a>
+                <img src="fb.png" onclick="www.facebook.com">
+            </a>
+            <a href="http://www.twitter.com">
+                <img src="tw.png">
+            </a>
+            <a href="http://www.gmail.com">
+                <img src="gp.png">
+            </a>
             </div>
 
             <form id="productdetails" class="input-group">
-                <input type="text" class="input-field" placeholder="Product ID" required>
+                <input type="text" class="input-field" placeholder="Reference ID" required>
                 <button type="submit" class="submit-btn">Proceed</button>
             </form>
 
@@ -42,24 +40,28 @@
 
         </div>
     </div>
-    <script>
-        var x = document.getElementById("productdetails");
-        var y = document.getElementById("login");
-        var z = document.getElementById("btn");
+<script>
+    var x = document.getElementById("productdetails");
+    var y = document.getElementById("login");
+    var z = document.getElementById("btn");
+    var a = document.getElementById("toggle-btn-1");
+    var b = document.getElementById("toggle-btn-2");
 
-        function login() {
-            x.style.left = "-400px";
-            y.style.left = "50px";
-            z.style.left = "110px";
-        }
+    function login(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+        a.style.color="black"
+        b.style.color="white"
+    }
 
-        function productdetails() {
-            x.style.left = "50px";
-            y.style.left = "450px";
-            z.style.left = "0px";
-        }
-
-    </script>
+    function productdetails(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px";
+        a.style.color="white"
+        b.style.color="black"
+    }
+</script>
 </body>
-
 </html>
