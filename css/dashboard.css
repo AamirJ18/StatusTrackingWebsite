@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/* css variables  */
+:root {
+  --primaryCol: #0a68ec;
+
+  --bg-color: #eeeeee;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --grey: #ddd;
+  --darkGrey: #d4c7c7;
+  --animate: 0.2s linear;
+  --secondaryCol: rgb(40, 127, 250);
+}
+/* reset  */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100%;
+  background-color: var(--mainWhite);
+  font-family: "Open Sans", serif;
+}
+.outer-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.content-section {
+  display: table-cell;
+  width: 82%;
+  vertical-align: top;
+}
+.nav-vertical {
+  background-color: var(--primaryCol);
+  position: relative;
+  display: table-cell;
+  width: 18%;
+  vertical-align: top;
+  /* width: 270px; */
+}
+h2 {
+  letter-spacing: 1px;
+  padding: 20px 5px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--mainWhite);
+}
+.vertical-menu ul {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: var(--grey);
+  padding: 0;
+  list-style-type: none;
+}
+.vertical-menu li {
+  padding-left: 15px;
+}
+.vertical-menu a {
+  color: var(--grey);
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}
+.menu-icon {
+  width: 25px;
+}
+
+.vertical-menu li:hover {
+  background-color: var(--secondaryCol);
+}
+.vertical-menu a:hover {
+  color: var(--mainWhite);
+}
+
+.social-media {
+  position: absolute;
+  top: 90%;
+  left: 22%;
+}
+
+.social-media a {
+  padding: 12px;
+  font-size: 26px;
+  color: var(--grey);
+}
+.social-media a:hover {
+  color: var(--mainWhite);
+}
+
+/* ______________________PROJECTS SECTION_________________________ */
+.project h2 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--mainBlack);
+}
+/* ________TABLE_______ */
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 0.9em;
+  font-family: "Open Sans", serif;
+  min-width: 75%;
+}
+.styled-table thead tr {
+  background-color: var(--primaryCol);
+  color: var(--mainWhite);
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--grey);
+  border-right: 1px solid var(--grey);
+  border-left: 1px solid var(--grey);
+}
+
+.button {
+  font-size: 16px;
+  width: fit-content;
+  height: 40px;
+  padding: 0 25px;
+  background-color: var(--primaryCol);
+  color: var(--mainWhite);
+  border: 1.2px solid var(--primaryCol);
+}
+
+/* __________add field button____________ */
+
+.addButton {
+  display: flex;
+  justify-content: center;
+}
+.addRow {
+  width: fit-content;
+  color: var(--mainBlack);
+  background-color: var(--grey);
+  border: 1px solid var(--mainBlack);
+}
+.addRow:hover {
+  cursor: pointer;
+  background-color: var(--bg-color);
+  color: var(--mainBlack);
+  transition: var(--animate);
+}
