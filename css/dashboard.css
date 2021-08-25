@@ -42,7 +42,6 @@ body {
   display: table-cell;
   width: 18%;
   vertical-align: top;
-  /* width: 270px; */
 }
 h2 {
   letter-spacing: 1px;
@@ -103,13 +102,13 @@ h2 {
   text-align: center;
   color: var(--mainBlack);
 }
-/* ________TABLE_______ */
+/* ______________________TABLE___________________________________ */
 .styled-table {
   border-collapse: collapse;
   margin: 25px auto;
   font-size: 0.9em;
   font-family: "Open Sans", serif;
-  min-width: 75%;
+  min-width: 80%;
 }
 .styled-table thead tr {
   background-color: var(--primaryCol);
